@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body, #map { height: 100%; margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    var map;
+    var marcadorDestino;
+    var marcadorUsuario;
+    // Ponto fixo: troque pelas coordenadas do seu destino
+    var destino = { lat: -23.515501, lng: -46.618128  };
+
+    // Roda ao carregar: centraliza no destino fixo e o marca
+    function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: destino,
+    });
+    marcadorDestino = new google.maps.Marker({
+    position: destino,
+    map: map,
+    title: "Destino"
+    });
+    }
+    // Adiciona um segundo marcador para a localização do usuário
+    function updateLocation(lat, lng) {
+    var origem = { lat: lat, lng: lng };
+    if (marcadorUsuario) {
+    marcadorUsuario.setMap(null);
+    }
+    marcadorUsuario = new google.maps.Marker({
+    position: origem,
+    map: map,
+    title: "Você está aqui",
+    // ícone azul, diferente do marcador do destino (vermelho)
+    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    });
+    }
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3cB-r43ry69hh7Q5i9kExVSn0K8QAIg&callback=initMap"
+        async defer></script>
+</body>
+</html>

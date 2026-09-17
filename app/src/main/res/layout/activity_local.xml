@@ -1,0 +1,358 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7F7"
+    tools:context=".Local">
+
+    <!-- ========================= -->
+    <!-- CABEÇALHO -->
+    <!-- ========================= -->
+
+    <View
+        android:id="@+id/bottomBar2"
+        android:layout_width="412dp"
+        android:layout_height="107dp"
+        android:background="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:background="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nike" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="NIKE           VASCO"
+        android:textColor="#FDFBFB"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vasco" />
+
+    <!-- ========================= -->
+    <!-- TÍTULO -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Encontre lojas Nike perto de você"
+        android:textColor="#FBF9F9"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView40" />
+
+    <!-- ========================= -->
+    <!-- MAPA -->
+    <!-- ========================= -->
+
+    <!-- ========================= -->
+    <!-- TÍTULO DAS LOJAS -->
+    <!-- ========================= -->
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="LOJAS NIKE"
+        android:textColor="#050505"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/view20"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- ========================= -->
+    <!-- PRIMEIRA LOJA -->
+    <!-- ========================= -->
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="6dp"
+        android:background="#070707"
+        app:layout_constraintBottom_toTopOf="@id/view21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="MAIS PERTO DE VOCÊ"
+        android:textColor="#FF0404"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/view20"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/imageView34"
+        app:layout_constraintTop_toTopOf="@id/view20"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/view20"
+        app:layout_constraintStart_toStartOf="@id/view20"
+        app:layout_constraintTop_toTopOf="@id/view20"
+        app:srcCompat="@drawable/nikecenter" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="NIKE UNITE CENTER NORTE"
+        android:textColor="#F8F6F6"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/view20"
+        app:layout_constraintStart_toEndOf="@id/imageView34"
+        app:layout_constraintTop_toTopOf="@id/view20" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Av. Otto Baumgart, 245"
+        android:textColor="#FBF9F9"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/view20"
+        app:layout_constraintStart_toEndOf="@id/imageView34"
+        app:layout_constraintTop_toBottomOf="@id/textView55" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="(11) 3475-0842"
+        android:textColor="#FBF9F9"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/view20"
+        app:layout_constraintStart_toEndOf="@id/imageView34"
+        app:layout_constraintTop_toBottomOf="@id/textView56" />
+
+    <!-- ========================= -->
+    <!-- SEGUNDA LOJA -->
+    <!-- ========================= -->
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:background="#070707"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/view21"
+        app:layout_constraintStart_toStartOf="@id/view21"
+        app:layout_constraintTop_toTopOf="@id/view21"
+        app:srcCompat="@drawable/nikelight2" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="NIKE FACTORY LIGHT"
+        android:textColor="#F8F6F6"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/view21"
+        app:layout_constraintStart_toEndOf="@id/imageView36"
+        app:layout_constraintTop_toTopOf="@id/view21" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="R. Cel Xavier de Toledo, 42"
+        android:textColor="#FBF9F9"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/view21"
+        app:layout_constraintStart_toEndOf="@id/imageView36"
+        app:layout_constraintTop_toBottomOf="@id/textView58" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="(11) 2189-0587"
+        android:textColor="#FBF9F9"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/view21"
+        app:layout_constraintStart_toEndOf="@id/imageView36"
+        app:layout_constraintTop_toBottomOf="@id/textView59" />
+
+    <!-- ========================= -->
+    <!-- BARRA INFERIOR -->
+    <!-- ========================= -->
+
+    <View
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:background="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="53dp"
+        android:layout_height="27dp"
+        android:text="INICIO"
+        android:textAlignment="center"
+        android:textColor="#F80707"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        app:srcCompat="@drawable/vasco" />
+
+    <Button
+        android:id="@+id/btnPegarLocalizacao15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F80404"
+        android:text="LOCALIZAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <TextView
+        android:id="@+id/textGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Aguardando localização..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPegarLocalizacao15"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <WebView
+        android:id="@+id/webViewMapa"
+        android:layout_width="348dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
